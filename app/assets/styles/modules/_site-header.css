@@ -1,0 +1,7 @@
+.site-header {
+    border-bottom: 1px solid;
+
+    ul {
+        list-style: none;
+    }
+}

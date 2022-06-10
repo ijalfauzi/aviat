@@ -1,11 +1,14 @@
-body {
-    color:#111;
-}
-
-$mainBlue: #2f5572;
-
-.large-hero {
-    h2 {
-        color: $mainBlue;
-    }
-}
+@import 'normalize.css';
+@import 'base/_global';
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'modules/_wrapper';
+@import 'modules/_row';
+@import 'modules/_site-header';
+@import 'modules/_large-hero';
+@import 'modules/_site-service';
+@import 'modules/_site-partner';
+@import 'modules/_site-client';;
+@import 'modules/_site-widget';
+@import 'modules/_site-footer';
+@import 'modules/_btn';

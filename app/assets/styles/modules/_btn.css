@@ -1,0 +1,29 @@
+.btn {
+    background-color: #fff;
+    border:2px solid $mainRed;
+    padding: .4375rem 1rem;
+    color: $mainRed;
+    border-radius: 20px;
+    display: inline-block;
+
+    &:hover{
+        background-color: $mainRed;
+        color: $mainWhite;
+    }
+
+    &--red {
+        background-color: $mainRed;
+        color: $mainWhite;
+        border: none;
+    }
+
+    &--dark {
+        background-color: $mainGrey;
+        color: $mainWhite;
+        border: none;
+    }
+
+    &--large {
+        padding: 1rem 2rem;
+    }
+}

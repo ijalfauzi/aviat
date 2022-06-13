@@ -46,9 +46,11 @@
 
     &__cta {
         text-align: center;
+        margin-bottom: 1.25rem;
 
         @mixin atSmall {
             text-align: inherit;
+            margin-bottom: 0;
         }
     }
 }

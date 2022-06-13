@@ -1,6 +1,7 @@
 .headline {
     text-transform: uppercase;
     font-size: 1.25rem;
+    margin-bottom: 2em;
 
     @mixin atSmall {
         font-size: 1.875rem;

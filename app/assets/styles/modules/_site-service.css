@@ -1,3 +1,38 @@
 .site-service {
-    
+
+}
+
+.service {
+    border: 2px solid #eee;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 20px;
+
+
+    &:hover {
+        border-color: $mainRed;
+    }
+
+    @mixin atSmall {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    &__icon {
+        max-width: 80px;
+        margin: 0 auto .5em;
+
+        @mixin atSmall {
+            max-width: 100px;
+        }
+    }
+
+    &__title {
+        margin: 0 0 .5em;
+    }
+
+    &__description {
+        margin: 0;
+    }
 }

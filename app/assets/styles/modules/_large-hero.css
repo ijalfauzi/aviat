@@ -1,3 +1,54 @@
-.large_hero {
-    text-align: center;
+.large-hero {
+    position: relative;
+
+    &__image {
+        display: block;
+    }
+
+    &__text-content {
+        padding-top: 60px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: bold;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+            text-align: inherit;
+            margin-top: 8rem;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        font-weight: 300;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.25rem;
+
+        @mixin atSmall {
+            font-size: 1.25rem;
+            text-align: inherit;
+        }
+    }
+
+    &__cta {
+        text-align: center;
+
+        @mixin atSmall {
+            text-align: inherit;
+        }
+    }
 }

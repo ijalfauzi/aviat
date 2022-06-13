@@ -1,0 +1,17 @@
+.headline {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+
+    @mixin atSmall {
+        font-size: 1.875rem;
+    }
+
+    strong {
+        color: $mainRed;
+        font-weight: bold;
+    }
+
+    &--centered {
+        text-align: center;
+    }
+}

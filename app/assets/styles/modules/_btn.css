@@ -20,7 +20,11 @@
     &--dark {
         background-color: $mainGrey;
         color: $mainWhite;
-        border: none;
+        border-color: $mainGrey;
+
+        &:hover {
+            background-color: $mainGrey;
+        }
     }
 
     &--large {

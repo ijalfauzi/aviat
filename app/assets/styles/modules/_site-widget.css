@@ -1,3 +1,51 @@
 .site-widget {
     text-align: center;
+
+    @mixin atMedium {
+        text-align: inherit;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-transform: capitalize;
+       
+        @mixin atSmall {
+            font-size: 1.17rem;
+        }
+    }
+
+    a {
+        color: #eee;
+    }
+
+    &__socials {
+        a {
+            display: inline-block;
+            margin: 0 .25em;
+        }
+
+        img {
+            max-width: 22px!important;
+        }
+    }
+}
+
+.widget-content {
+    margin-bottom: 50px;
+
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+}
+
+.widget-1 {
+    img {
+        max-width: 150px;
+    }
+}
+
+.widget-2 {
+    img {
+        max-width: 60px;
+    }
 }

@@ -15,4 +15,17 @@
     &--centered {
         text-align: center;
     }
+
+    &--widget {
+        font-size: 1rem;
+        background-color: $mainDarkred;
+        padding:.75em 0;
+        text-transform: uppercase;
+       
+        @mixin atMedium {
+            font-size: 1.17rem;
+            padding: inherit;
+            background-color: transparent;
+        }
+    }
 }

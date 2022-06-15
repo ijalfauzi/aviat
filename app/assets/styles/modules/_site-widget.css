@@ -5,17 +5,8 @@
         text-align: inherit;
     }
 
-    h3 {
-        font-size: 1rem;
-        text-transform: capitalize;
-       
-        @mixin atSmall {
-            font-size: 1.17rem;
-        }
-    }
-
     a {
-        color: #eee;
+        color: #ddd;
     }
 
     &__socials {
@@ -33,8 +24,16 @@
 .widget-content {
     margin-bottom: 50px;
 
+    &--last-widget {
+        margin-bottom: 0;
+    }
+
     @mixin atMedium {
         margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
     }
 }
 

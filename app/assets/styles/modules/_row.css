@@ -1,10 +1,5 @@
 .row {
 
-    &__small-6 {
-        float: left;
-        width: 50%;
-    }
-
     @mixin clearfix;
 
     &--t-padding {

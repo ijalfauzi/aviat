@@ -6,3 +6,19 @@
         max-width: 160px;
     }
 }
+
+.partner {
+    padding: 0 1em;
+
+    &--1 {
+        @mixin atMedium {
+            text-align: right;
+        }
+    }
+    &--2 {
+        @mixin atMedium {
+            text-align: left;
+        }
+    }
+    
+}

@@ -5,7 +5,12 @@
 
     &__inner {
         display: grid;
-        grid-template-columns: 1fr auto 1fr;      
+        grid-template-columns: 1;
+        
+
+        @mixin atSmall {
+            grid-template-columns: .75fr 1.5fr .75fr;
+        }
     }
 
     &__logo {
@@ -22,9 +27,14 @@
     }
     
     &__cta {
-        display: flex;
-        justify-content: flex-end;
+        display: grid;
+        justify-content: center;
         align-items: center;
+
+        @mixin atSmall {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
 

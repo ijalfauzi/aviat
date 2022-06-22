@@ -18,13 +18,13 @@
     }
 
     &--dark {
-        background-color: $mainGrey;
+        background-color: $mainDarkred;
         color: $mainWhite;
-        border-color: $mainGrey;
+        border-color: $mainDarkred;
         margin-top: 15px;
 
         &:hover {
-            background-color: $mainGrey;
+            background-color: $mainDarkred;
         }
     }
 

@@ -8,5 +8,6 @@
     &--red {
         background-color: $mainRed;
         color: $mainWhite;
+        border-top: 5px solid $mainDarkred;
     }
 }

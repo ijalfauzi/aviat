@@ -13,31 +13,30 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <div class="site-header__inner">
-                <div class="site-header__logo">
-                    <img src="assets/images/aviat-logo.webp" alt="">
-                </div>
-                <div class="site-header__menu">
-                    <nav class="primary-nav">
-                        <ul class="primary-nav__menu">
-                            <li class="menu-item"><a href="#">About</a></li>
-                            <li class="menu-item has-submenu"><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
-
-                            </li>
-                            <li class="menu-item"><a href="#">Blog</a></li>
-                            <li class="menu-item"><a href="#">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="site-header__cta">
-                    <nav class="primary-cta">
-                        <ul class="primary-cta__menu">
-                            <li><a href="#" class="btn">Preview Modul</a></li>
-                            <li><a href="#" class="btn">Request Demo</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <nav>
+                <ul class="menu">
+                  <li class="logo"><a href="#"><img src="assets/images/aviat-logo.webp"></a></li>
+                  <li class="item"><a href="#">About</a></li>
+                  <li class="item has-submenu">
+                    <a tabindex="0">Services</a>
+                    <ul class="submenu">
+                      <li class="subitem"><a href="#">SIMRS (Sistem Informasi Manajemen Rumah Sakit)</a></li>
+                      <li class="subitem"><a href="#">SIMKlinik (Sistem Informasi Manajemen Klinik)</a></li>
+                      <li class="subitem"><a href="#">SIREM (Sistem Penyimpanan Dokumen Digital Rekam Medis)</a></li>
+                      <li class="subitem"><a href="#">Aviat Telemedis</a></li>
+                      <li class="subitem"><a href="#">Aviat AI for Health</a></li>
+                      <li class="subitem"><a href="#">Kioska</a></li>
+                    </ul>
+                  </li>
+                  <li class="item"><a href="#">Blog</a></li>
+                  <li class="item"><a href="#">Contact</a>
+                  </li>
+                  <li class="item"><a href="#"><i class="fa-solid fa-search"></i></a></li>
+                  <li class="item button"><a class="btn" href="#">Preview Modul</a></li>
+                  <li class="item button secondary"><a class="btn" href="#">Request Demo</a></li>
+                  <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </nav>
         </div>
     </header>
     <div class="large-hero page-section">
@@ -277,5 +276,56 @@
         </div>
     </footer>
     <script src="bundled.js"></script>
+    <script>
+        const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
+
+    </script>
 </body>
 </html>

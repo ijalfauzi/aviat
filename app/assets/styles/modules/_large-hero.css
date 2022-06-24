@@ -29,6 +29,7 @@
         font-size: 1.25rem;
         text-align: center;
         font-weight: bold;
+        margin-top: 2.5rem;
 
         @mixin atSmall {
             font-size: 1.875rem;

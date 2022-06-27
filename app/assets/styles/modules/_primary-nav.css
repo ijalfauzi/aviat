@@ -38,7 +38,7 @@
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
-    color: #ccc;
+    color: $mainRed;
   }
 
   li.button a {
@@ -58,6 +58,13 @@
   }
   .menu li.subitem a {
     padding: 15px;
+    text-transform: capitalize;
+    font-size: 1rem;
+
+    &:hover {
+      color: $mainWhite;
+      background-color: $mainRed;
+    }
   }
   .toggle {
     order: 1;
@@ -152,9 +159,13 @@
     .submenu-active .submenu {
       display: block;
       position: absolute;
-      left: 0;
-      top: 68px;
-      background: #111;
+      width: max-content;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 94px;
+      background: #eeeeee;
+      border-top: 4px solid $mainRed;
+      z-index: 999;
     }
     .toggle {
       display: none;

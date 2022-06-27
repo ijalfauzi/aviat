@@ -91,11 +91,7 @@
     font-size: 12px;
   }
   .has-submenu > a::after {
-    font-family: "Font Awesome 5 Free";
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 900;
-    content: "\f078";
+    content: url(https://ijalfauzi.github.io/aviat/assets/images/icons/arrow.webp);
     padding-left: 5px;
   }
   .subitem a {
@@ -167,4 +163,16 @@
       border-radius: 0;
     }
   }
-  
+
+.bars, .times {
+  width: 16px;
+  height: 16px;
+}
+
+.bars {
+  background-image: url(https://ijalfauzi.github.io/aviat/assets/images/icons/bars.webp);
+}
+
+.bars {
+  background-image: url(https://ijalfauzi.github.io/aviat/assets/images/icons/times.webp);
+}

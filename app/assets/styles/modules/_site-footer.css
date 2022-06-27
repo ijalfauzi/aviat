@@ -10,4 +10,11 @@
         font-size: .875rem;
         padding: 1rem 0;
     }
+    span {
+        display: none;
+        
+        @mixin atSmall {
+            display: inline;
+        }
+    }
 }

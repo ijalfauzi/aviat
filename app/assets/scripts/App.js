@@ -1,6 +1,8 @@
 import '../styles/styles.css';
 import Navigation from './modules/Navigation'
 import RevealOnScroll from './modules/RevealOnScroll'
+import GoogleAnalytics from './modules/GoogleAnalytics'
+import GoogleTagManagr from './modules/GoogleTagManager'
 
 
 new RevealOnScroll(document.querySelectorAll(".service"), 75)

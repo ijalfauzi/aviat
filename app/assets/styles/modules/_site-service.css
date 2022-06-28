@@ -8,10 +8,12 @@
     text-align: center;
     padding: 20px;
     margin: 0 0 20px;
+    transition: all .35s ease-out;
 
 
     &:hover {
         border-color: $mainRed;
+        transition: all .35s ease-out;
     }
 
     @mixin atSmall {

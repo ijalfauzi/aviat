@@ -30,6 +30,9 @@
   .submenu {
     list-style-type: none;
   }
+  .submenu {
+    text-align: left;
+  }
   .item {
     padding: 20px 20px;
   }
@@ -160,8 +163,7 @@
       display: block;
       position: absolute;
       width: max-content;
-      left: 50%;
-      transform: translateX(-50%);
+      left:0;
       top: 94px;
       background: #eeeeee;
       border-top: 4px solid $mainRed;

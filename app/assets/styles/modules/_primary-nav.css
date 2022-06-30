@@ -72,6 +72,7 @@
     order: 1;
     font-size: 20px;
   }
+
   .item.button {
     order: 2;
   }
@@ -176,15 +177,9 @@
     }
   }
 
-.bars, .times {
-  width: 16px;
-  height: 16px;
-}
 
-.bars {
-  background-image: url(https://ijalfauzi.github.io/aviat/assets/images/icons/bars.webp);
-}
-
-.bars {
-  background-image: url(https://ijalfauzi.github.io/aviat/assets/images/icons/times.webp);
+.toggle a {
+  text-transform: lowercase!important;
+  font-size: 1.5rem;
+  color: $mainRed;
 }

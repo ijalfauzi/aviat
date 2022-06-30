@@ -34,10 +34,14 @@
     text-align: left;
   }
   .item {
-    padding: 1.25rem;
+    @mixin atSmall {
+      padding: 1.25rem;
+    }
   }
   .item.button {
-    padding: 16px 5px;
+    @mixin atSmall {
+      padding: 1.25rem .3125rem;
+    }
   }
   .item:not(.button) a:hover,
   .item a:hover::after {
@@ -56,7 +60,7 @@
   }
   .menu li a {
     display: block;
-    padding: 15px 5px;
+    padding: .9375rem .3125rem;
     text-transform: uppercase;
   }
   .menu li.subitem a {
@@ -70,7 +74,7 @@
   }
   .toggle {
     order: 1;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .item.button {
@@ -87,8 +91,13 @@
   }
   .button.secondary {
     /* divider between buttons and menu links */
-    border-bottom: 2px $mainRed solid;
-    padding-bottom: 20px;
+    border-bottom: 1px $mainList solid;
+    padding-bottom: 1.25rem;
+    margin-top: 1.25rem;
+
+    @mixin atSmall {
+      margin-top: 0;
+    }
   }
   /* Submenu up from mobile screens */
   .submenu {
@@ -98,14 +107,14 @@
     display: block;
   }
   .has-submenu i {
-    font-size: 12px;
+    font-size: .75rem;
   }
   .has-submenu > a::after {
     content: url(https://ijalfauzi.github.io/aviat/assets/images/icons/arrow.webp);
-    padding-left: 5px;
+    padding-left: .3125rem;
   }
   .subitem a {
-    padding: 10px 15px;
+    padding: .625rem .9375rem;
   }
   .submenu-active {
     background-color: #eee;
@@ -132,8 +141,8 @@
     }
     /* Button up from tablet screen */
     .menu li.button a {
-      padding: 10px 15px;
-      margin: 5px 0;
+      padding: .625rem .9375rem;
+      margin: .3125rem 0;
     }
     .button.secondary {
       border: 0;

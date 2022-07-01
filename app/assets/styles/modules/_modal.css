@@ -1,0 +1,67 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.25);
+    transition: all .35s ease-out;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $mainRed;
+    display: flex;
+    color: $mainWhite;
+
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    &__inner {
+        flex: 1;
+        margin: auto;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+        color: $mainWhite;
+
+        @mixin atSmall {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: $mainWhite;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        cursor: pointer;
+    }
+
+    input[type=search] {
+        background: none;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: $mainWhite;
+        color: $mainWhite;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+
+        &:focus{
+            outline: none;
+          }
+        &::placeholder {
+            color: $mainWhite;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}

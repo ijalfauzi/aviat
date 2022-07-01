@@ -12,6 +12,11 @@
         font-weight: bold;
     }
 
+    &--less-margin {
+        margin-bottom: 1.25rem;
+        margin-top: 0;
+    }
+
     &--centered {
         text-align: center;
     }

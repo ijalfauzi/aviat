@@ -38,7 +38,7 @@ class Modal {
         document.body.insertAdjacentHTML('beforeend', `
         <div class="modal">
             <div class="modal__inner">
-                <h2 class="headline headline--centered headline--less-margin">Find Something</h2>
+                <h2 class="headline headline--centered headline--less-margin">Aviat Search</h2>
             <div class="wrapper wrapper--narrow">
             <input type="search" name="" id="" placeholder="Type and hit enter">
             <p class="modal__description">Type your keywords on the form above. Or, connect with us on any of the platforms below!</p>

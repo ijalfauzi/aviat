@@ -46,14 +46,13 @@
     }
 
     input[type=search] {
-        background: none;
-        border-width: 0 0 2px 0;
-        border-style: solid;
-        border-color: $mainWhite;
+        background: $mainDarkred;
+        border-width: 0;
         color: $mainWhite;
         width: 100%;
         padding: 1rem;
         text-align: center;
+        border-radius:5px;
 
         &:focus{
             outline: none;
@@ -62,6 +61,8 @@
             color: $mainWhite;
             font-style: italic;
             text-align: center;
+            font-weight: 300;
+            font-size: .875rem;
         }
     }
 }

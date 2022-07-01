@@ -44,9 +44,9 @@ class Modal {
             <p class="modal__description">Type your keywords on the form above. Or, connect with us on any of the platforms below!</p>
         </div>
       <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.webp" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.webp" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/linkedin.webp" alt="YouTube"></a>
+        <a href="https://www.facebook.com/aviatindonesia" class="social-icons__icon"><img src="assets/images/icons/facebook.webp" alt="Facebook Aviat"></a>
+        <a href="https://www.instagram.com/aviat.id/" class="social-icons__icon"><img src="assets/images/icons/instagram.webp" alt="Instagram Aviat"></a>
+        <a href="https://www.linkedin.com/showcase/aviat-id/" class="social-icons__icon"><img src="assets/images/icons/linkedin.webp" alt="Linkedin Aviat"></a>
       </div>
     </div>
     <div class="modal__close">X</div>

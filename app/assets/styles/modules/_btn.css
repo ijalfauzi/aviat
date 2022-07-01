@@ -15,6 +15,10 @@
         background-color: $mainRed;
         color: $mainWhite;
         border: none;
+
+        &:hover {
+            background-color: $mainDarkred;
+        }
     }
 
     &--dark {

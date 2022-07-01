@@ -1,15 +1,10 @@
-.site-service {
-
-}
-
 .service {
     border: 2px solid #eee;
     border-radius: 15px;
     text-align: center;
-    padding: 20px;
     margin: 0 0 20px;
     transition: all .35s ease-out;
-
+    padding: 1.25rem;
 
     &:hover {
         border-color: $mainRed;
@@ -18,7 +13,7 @@
 
     @mixin atSmall {
         margin: 20px;
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     &__icon {

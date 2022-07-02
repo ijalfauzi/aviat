@@ -80,6 +80,8 @@
   .toggle {
     order: 1;
     font-size: 1.25rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
   }
 
   .item.button {

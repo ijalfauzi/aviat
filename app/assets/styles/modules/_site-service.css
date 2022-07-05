@@ -2,9 +2,13 @@
     border: 2px solid #eee;
     border-radius: 15px;
     text-align: center;
-    margin: 0 0 20px;
+    margin: 0 0 1.125rem;
     transition: all .35s ease-out;
     padding: 1.25rem;
+
+    @mixin atSmall {
+        margin-bottom: 2.8125rem;
+    }
 
     &:hover {
         border-color: $mainRed;
@@ -12,7 +16,6 @@
     }
 
     @mixin atSmall {
-        margin: 20px;
         padding: 1.25rem;
     }
 
@@ -31,5 +34,6 @@
 
     &__description {
         margin: 0;
+        min-height: 3rem;
     }
 }

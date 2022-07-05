@@ -1,6 +1,10 @@
 .large-hero {
     position: relative;
 
+    @mixin atSmall {
+    padding: 6.5rem 0;
+    }
+
     &__image {
         position: absolute;
         top: 0;
@@ -34,7 +38,7 @@
         @mixin atSmall {
             font-size: 1.875rem;
             text-align: inherit;
-            margin-top: 8rem;
+            margin-top: 2rem;
         }
     }
 

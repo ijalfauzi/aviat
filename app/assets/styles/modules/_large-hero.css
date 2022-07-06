@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 1024px) {
     /* Remove top left background on 1024px screen */
-    .large-hero::before, .site-blog::before {
+    .large-hero::before, .site-blog::before, .site-content::before {
         display: none;
     }
 }

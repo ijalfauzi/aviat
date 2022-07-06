@@ -1,12 +1,47 @@
 .site-content {
+    position: relative;
+
+    @mixin atSmall {
+        padding: 6.5rem 0;
+    }
+
+    &::before {
+        position: absolute;
+        content:url(https://ijalfauzi.github.io/aviat/assets/images/hero-section-background.webp);
+        top: 0;
+        left: 0;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
     }
     p.subtitle {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
     }
 
     h1, p.subtitle {
         color: $mainRed;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    /* Top and bottom padding for large hero on medium screen */
+    .site-content {
+        padding: 4.5rem 0;
+    }
+    
+    /* Reduce large hero background on medium screen */
+    .site-content::before {
+        top: -80px;
+        left: -40px;
+    }
+}
+

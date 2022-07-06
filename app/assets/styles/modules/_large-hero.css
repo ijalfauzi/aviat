@@ -81,7 +81,7 @@
         padding: 4.5rem 0;
     }
     
-    /* Reduce top left background on medium screen */
+    /* Reduce large hero background on medium screen */
     .large-hero::before {
         top: -80px;
         left: -40px;
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 1024px) {
     /* Remove top left background on 1024px screen */
-    .large-hero::before {
+    .large-hero::before, .site-blog::before {
         display: none;
     }
 }

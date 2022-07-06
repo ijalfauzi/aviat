@@ -1,3 +1,11 @@
 .site-client {
     text-align: center;
+    position: relative;
+
+    &::before {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+    }
 }

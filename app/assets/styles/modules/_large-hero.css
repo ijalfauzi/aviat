@@ -7,7 +7,7 @@
 
     &::before {
         position: absolute;
-        content:url(https://ijalfauzi.github.io/aviat/assets/images/bg-top-left.webp);
+        content:url(https://ijalfauzi.github.io/aviat/assets/images/hero-section-background.webp);
         top: 0;
         left: 0;
     }

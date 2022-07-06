@@ -67,11 +67,23 @@
     }
 }
 
-/* aviat background 
-@media screen and (max-width: 1280px) {
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    /* Top and bottom padding for large hero on medium screen */
+    .large-hero {
+        padding: 4.5rem 0;
+    }
+    
+    /* Reduce top left background on medium screen */
     .large-hero__image {
         top: -80px;
         left: -40px;
     }
 }
-*/
+
+@media screen and (max-width: 1024px) {
+    /* Remove top left background on 1024px screen */
+    .large-hero__image {
+        display: none;
+    }
+}

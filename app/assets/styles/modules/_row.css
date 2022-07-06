@@ -63,6 +63,11 @@
             width:66.66%;
         }
 
+        &__medium-9 {
+            float: left;
+            width: 75%;
+        }
+
         &__medium-8--larger {
             width: 63%;
         }
@@ -92,9 +97,14 @@
             width: 50%;
         }
     
-        &__medium-8 {
+        &__large-8 {
             float: left;
             width:66.66%;
+        }
+
+        &__large-9 {
+            float: left;
+            width: 75%;
         }
 
         &__medium-8--larger {

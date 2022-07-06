@@ -75,7 +75,7 @@
     }
     
     /* Reduce top left background on medium screen */
-    .large-hero__image {
+    .large-hero__image, .top {
         top: -80px;
         left: -40px;
     }
@@ -83,7 +83,21 @@
 
 @media screen and (max-width: 1024px) {
     /* Remove top left background on 1024px screen */
-    .large-hero__image {
+    .large-hero__image, .top {
         display: none;
+    }
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113px;
+    height: 796px;
+    visibility: hidden;
+    background-image: url("https://ijalfauzi.github.io/aviat/assets/images/bg-top-left.webp");
+
+    @mixin atLarge {
+        visibility: visible;
     }
 }

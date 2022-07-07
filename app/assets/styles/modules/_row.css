@@ -2,6 +2,10 @@
 
     @mixin clearfix;
 
+    &--b-margin {
+        margin-bottom: 4.5rem;
+    }
+
     &--t-padding {
         padding-top: 80px;
     }

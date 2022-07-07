@@ -25,6 +25,10 @@
         color: $mainRed;
     }
 
+    &--capitalized {
+        text-transform: capitalize;
+    }
+
     &--widget {
         font-size: 1rem;
         background-color: $mainDarkred;

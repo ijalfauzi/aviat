@@ -127,6 +127,11 @@
       max-width: 100px;
       margin: 0 auto;
     }
+
+    img.feature {
+      margin: 0 1rem 1rem 0;
+      float: left;
+  }
   }
   
   /* Title of the card */

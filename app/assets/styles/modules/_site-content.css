@@ -123,6 +123,12 @@
       text-align: center;
     }
 
+    &--narrow {
+      max-width: 680px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
     img {
       max-width: 100px;
       margin: 0 auto;
@@ -168,11 +174,11 @@
   
   /* setting dot to the left if the card is odd */
   .card:nth-child(odd) > .info > .title::before {
-    left: -4.2rem;
+    left: -2.3rem;
   }
   
   /* setting dot to the right if the card is odd */
   .card:nth-child(even) > .info > .title::before {
-    right: -4.2rem;
+    right: -2.3rem;
   }
   

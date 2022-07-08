@@ -131,7 +131,17 @@
     img.feature {
       margin: 0 1rem 1rem 0;
       float: left;
-  }
+    }
+
+    h3  {
+      position: relative;
+      background: #cc0202;
+      color: #ffffff;
+      padding: .625rem 2rem;
+      margin: 20px -31px;
+      font-size: 1.25rem;
+      text-align: center;
+    }
   }
   
   /* Title of the card */

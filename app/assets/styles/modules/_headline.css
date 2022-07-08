@@ -29,6 +29,10 @@
         text-transform: capitalize;
     }
 
+    &--cta {
+        margin: 2rem 0 0;
+    }
+
     &--widget {
         font-size: 1rem;
         background-color: $mainDarkred;

@@ -40,7 +40,45 @@
         <div class="wrapper">
             <div class="row row--gutters">
                 <div class="row__medium-6">
-                    <h1>Request Demo</h1>
+                    <h1 class="headline headline--centered headline--red headline--capitalized headline--cta">
+                        Request Demo
+                    </h1>
+                    <p class="subcta">
+                        Sialakn isi form di bawah ini untuk melakukan permintaan demo dari tim kami
+                    </p>
+                    <div class="form-cta">
+                        <div class="kontainer">
+                            <form action="" method="POST">
+                                <input placeholder="Nama *" type="text" name="log-app-name" required="" id="log-app-name"></br>
+                                <input placeholder="No Telepon / WhatsApp *" type="number" name="log-app-no-wa" required=""></br>
+                                <input placeholder="E-mail *" type="email" name="log-app-email" required=""></br>
+                                <input placeholder="Perusahaan / Instansi *" type="text" name="log-app-perusahaan" required=""></br>
+                                <input placeholder="Jabatan *" type="text" name="log-app-jabatan" required=""></br>
+                                <select name="log-app-layanan" id="log-app-layanan" required="">
+                                            <option value="Pilih Layanan" readonly=""></option>
+                                            <option value="SIMRS">SIMRS (Sistem Informasi Manajemen RS)</option>
+                                            <option value="SIMKlinik">SIMKlinik (Sistem Informasi Manajemen Klinik)</option>
+                                            <option value="SIREM">SIREM (Sistem Rekam Medis)</option>
+                                            <option value="Telemedis">Aviat Telemedis</option>
+                                            <option value="AI for Health">Aviat AI for Health</option>
+                                            <option value="KIOSKA">KIOSKA</option>
+                                            </select></br>
+                               <input type="date" name="log-app-date" required="" min="2022-07-15"></br>
+                               <select name="log-app-waktu" id="log-app-waktu" required="">
+                                            <option value="" readonly=""></option>
+                                            <option value="09:00">09:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="11:00">11:00</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="16:00">16:00</option>
+                                        </select></br>
+                                <br/>
+                                <input type="submit" value="Kirim" name="log-app-form" class="submit-form-app">
+                            </form>
+                        </div>	
+                    </div>
                 </div>
                 <div class="row__medium-6">
                     <img src="assets/images/contact-aviat.webp" alt="Kontak Aviat">

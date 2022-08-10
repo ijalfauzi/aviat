@@ -34,7 +34,9 @@ class Modal {
             <div class="modal__inner">
                 <h2 class="headline headline--centered headline--less-margin">Aviat Search</h2>
             <div class="wrapper wrapper--narrow">
-            <input type="search" name="" id="" placeholder="Type and hit enter">
+            <form role="search" method="get" action="https://aviat.id/">
+                <input type="search" name="s" placeholder="Type and hit enter">
+            </form>
             <p class="modal__description">Type your keywords on the form above. Or, connect with us on any of the platforms below!</p>
         </div>
       <div class="social-icons">

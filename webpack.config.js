@@ -33,8 +33,7 @@ let pages = fse.readdirSync('./app').filter(function(file) {
 }).map(function(page) {
     return new HtmlWebpackPlugin({
         filename: page,
-        template:`./app/${page}`,
-        inject: true
+        template:`./app/${page}`
     })
 })
 

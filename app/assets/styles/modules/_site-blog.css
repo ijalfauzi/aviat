@@ -6,6 +6,7 @@
         content:url("https://ijalfauzi.github.io/aviat/assets/images/blog-section-background.webp");
         top: 0;
         left: 0;
+        z-index: -1;
     }
 }
 

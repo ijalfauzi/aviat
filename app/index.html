@@ -162,12 +162,13 @@
                     <article class="post">
                         <a href="" class="post__thumbnail">
                             <div class="post__thumbnail-inner">
-                                <img src="assets/images/blogpost-1.webp" alt="">
+                                <img src="assets/images/mudahkan-pengambilan-keputusan-industri-rumah-sakit-dengan-business-intelligence.webp" alt="">
                             </div>
                         </a>
                         <div class="post__content">
-                            <a href="#"><h2>Manajemen Pelayanan Kesehatan Efisien dengan Fitur Business Intelligence AVIAT</h2></a>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque expedita rerum tempora dolorum odio distinctio blanditiis, consequatur ducimus quod repellendus itaque autem. Ipsa tenetur nemo est maxime distinctio iste?</p>
+                            <a href="#"><h2>Mudahkan Pengambilan Keputusan Industri Rumah Sakit dengan Business Intelligence
+                            </h2></a>
+                            <p>Sama seperti halnya pada bidang industri pada umumnya, data merupakan variabel penting dalam pengambilan keputusan strategis pada industri rumah sakit. Data pelayanan bukan hanya bermanfaat untuk proses pemeriksaan saja, tetapi ...</p>
                             <a href="#" class="post__more">Read More</a>
                         </div>
                     </article>
@@ -176,12 +177,12 @@
                     <article class="post">
                         <a href="" class="post__thumbnail">
                             <div class="post__thumbnail-inner">
-                                <img src="assets/images/blogpost-2.webp" alt="">
+                                <img src="assets/images/potensi-business-intelligence-untuk-meningkatkan-kunjungan-pasien.webp" alt="">
                             </div>
                         </a>
                         <div class="post__content">
-                            <a href="#"><h2>Tingkatkan Keunggulan Rumah Sakit Anda dengan Healthcare Business Intelligence</h2></a>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque expedita rerum tempora dolorum odio distinctio blanditiis, consequatur ducimus quod repellendus itaque autem. Ipsa tenetur nemo est maxime distinctio iste?</p>
+                            <a href="#"><h2>Potensi Business Intelligence untuk Meningkatkan Kunjungan Pasien</h2></a>
+                            <p>Setiap pasien yang berobat tentu mengharapkan kesembuhan. Hal ini mendorong mereka untuk memilih rumah sakit dengan kualitas pelayanan yang baik. Di era sekarang, saat informasi terbuka lebar dan mudah diakses melalui berbagai ...</p>
                             <a href="#" class="post__more">Read More</a>
                         </div>
                     </article>
@@ -190,12 +191,12 @@
                     <article class="post">
                         <a href="" class="post__thumbnail">
                             <div class="post__thumbnail-inner">
-                                <img src="assets/images/blogpost-1.webp" alt="">
+                                <img src="assets/images/farmasi-dengan-mudah-menerima-order-obat-dari-dokter-dengan-modul-prescription-order.webp" alt="">
                             </div>
                         </a>
                         <div class="post__content">
-                            <a href="#"><h2>Manajemen Pelayanan Kesehatan Efisien dengan Fitur Business Intelligence AVIAT</h2></a>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque expedita rerum tempora dolorum odio distinctio blanditiis, consequatur ducimus quod repellendus itaque autem. Ipsa tenetur nemo est maxime distinctio iste?</p>
+                            <a href="#"><h2>Farmasi dengan Mudah Menerima Order Obat Dari Dokter dengan Modul Prescription Order</h2></a>
+                            <p>Anda sedang kesulitan menghadapi prescription order yang semakin kompleks pada rumah sakit yang dikelola? Saatnya Anda berkenalan dengan solusi terbaru ini! Sudah waktunya industri kesehatan tanah air bertransformasi agar perkembangannya tidak ...</p>
                             <a href="#" class="post__more">Read More</a>
                         </div>
                     </article>
@@ -341,30 +342,80 @@
 
     <script type="text/javascript">
         // Get the modal
-var modal = document.getElementById("myModal");
+        var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal__close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("modal__close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        const toggle = document.querySelector(".toggle");
+        const menu = document.querySelector(".menu");
+        const items = document.querySelectorAll(".item");
+
+        /* Toggle mobile menu */
+        function toggleMenu() {
+        if (menu.classList.contains("active")) {
+            menu.classList.remove("active");
+            toggle.querySelector("a").innerHTML = "&equiv;";
+        } else {
+            menu.classList.add("active");
+            toggle.querySelector("a").innerHTML = "x";
+        }
+        }
+
+        /* Activate Submenu */
+        function toggleItem() {
+        if (this.classList.contains("submenu-active")) {
+            this.classList.remove("submenu-active");
+        } else if (menu.querySelector(".submenu-active")) {
+            menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            this.classList.add("submenu-active");
+        } else {
+            this.classList.add("submenu-active");
+        }
+        }
+
+        /* Close Submenu From Anywhere */
+        function closeSubmenu(e) {
+        if (menu.querySelector(".submenu-active")) {
+            let isClickInside = menu
+            .querySelector(".submenu-active")
+            .contains(e.target);
+
+            if (!isClickInside && menu.querySelector(".submenu-active")) {
+            menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            }
+        }
+        }
+
+        /* Event Listeners */
+        toggle.addEventListener("click", toggleMenu, false);
+        for (let item of items) {
+        if (item.querySelector(".submenu")) {
+            item.addEventListener("click", toggleItem, false);
+        }
+        item.addEventListener("keypress", toggleItem, false);
+        }
+        document.addEventListener("click", closeSubmenu, false);
     </script>
 
 </body>

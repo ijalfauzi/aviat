@@ -184,6 +184,8 @@
       background: #eeeeee;
       border-top: 4px solid $mainRed;
       z-index: 999;
+      border-radius: 0 0 10px 10px;
+      overflow: hidden;
     }
     .toggle {
       display: none;
